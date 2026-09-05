@@ -56,7 +56,7 @@ export function Hero() {
               className="h-full w-full object-cover"
             />
           </div>
-          <div className="mx-4 -mt-10 rounded-2xl border border-border bg-card p-4 shadow-soft sm:mx-8 sm:p-5">
+          <div className="relative z-10 mx-4 -mt-10 rounded-2xl border border-border bg-card p-4 shadow-lift sm:mx-8 sm:p-5">
             <div className="flex items-center gap-3">
               <span className="inline-flex size-11 shrink-0 items-center justify-center rounded-xl bg-accent text-accent-foreground">
                 <ClipboardList className="size-5" aria-hidden="true" />
