@@ -28,9 +28,7 @@ export function FinalCTA() {
             <MessageCircle aria-hidden="true" />
             Quero uma avaliação da minha obra
           </Button>
-          <p className="mt-4 text-sm text-primary-foreground/80">
-            Fale diretamente pelo WhatsApp.
-          </p>
+          <p className="mt-4 text-sm text-primary-foreground/80">Fale diretamente pelo WhatsApp.</p>
         </Reveal>
       </div>
     </section>

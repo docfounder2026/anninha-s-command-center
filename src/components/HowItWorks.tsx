@@ -17,11 +17,19 @@ export function HowItWorks() {
   return (
     <section id="como-funciona" className="py-20 sm:py-24">
       <div className="container-page">
-        <SectionHeading eyebrow="Como funciona" title="Simples para você. Organizado pela Anninha." />
+        <SectionHeading
+          eyebrow="Como funciona"
+          title="Simples para você. Organizado pela Anninha."
+        />
 
         <ol className="mx-auto mt-14 max-w-3xl">
           {STEPS.map((step, i) => (
-            <Reveal as="li" key={step} delay={i * 60} className="relative flex gap-5 pb-8 last:pb-0">
+            <Reveal
+              as="li"
+              key={step}
+              delay={i * 60}
+              className="relative flex gap-5 pb-8 last:pb-0"
+            >
               {i < STEPS.length - 1 && (
                 <span
                   aria-hidden="true"
@@ -43,9 +51,7 @@ export function HowItWorks() {
             size="lg"
             className="h-14 text-base"
             onClick={() =>
-              openWhatsApp(
-                "Olá, Anninha! Conheci a ANNINHA CONSTRUÇÕES pelo site e quero começar.",
-              )
+              openWhatsApp("Olá, Anninha! Conheci a ANNINHA CONSTRUÇÕES pelo site e quero começar.")
             }
           >
             Quero começar

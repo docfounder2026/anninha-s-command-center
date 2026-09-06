@@ -31,10 +31,7 @@ export function SavingsExample() {
                 </tr>
               ))}
               <tr className="bg-accent/60">
-                <th
-                  scope="row"
-                  className="px-6 py-5 text-sm font-semibold text-accent-foreground"
-                >
+                <th scope="row" className="px-6 py-5 text-sm font-semibold text-accent-foreground">
                   <span className="inline-flex items-center gap-2">
                     <TrendingDown className="size-4" aria-hidden="true" />
                     Economia identificada
