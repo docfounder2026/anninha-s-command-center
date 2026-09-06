@@ -10,19 +10,19 @@ export function Hero() {
       <div className="container-page grid items-center gap-12 py-16 lg:grid-cols-2 lg:gap-16 lg:py-24">
         <Reveal>
           <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-xs font-medium uppercase tracking-[0.16em] text-primary">
-            Gestão de Compras + Acompanhamento
+            Planejamento que constrói tranquilidade
           </p>
-          <h1 className="text-4xl font-semibold leading-[1.08] text-foreground sm:text-5xl lg:text-6xl">
-            Sua obra sob <span className="text-primary">controle</span>, mesmo quando você não pode
-            estar nela.
+          <h1 className="font-display text-4xl font-bold leading-[1.05] text-primary sm:text-5xl lg:text-6xl">
+            Gestão de Compras e Acompanhamento de Obras
           </h1>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            A ANNINHA CONSTRUÇÕES cuida das compras, fornecedores, entregas e acompanhamento
-            operacional da sua obra para você ganhar tempo,{" "}
-            <strong className="font-semibold text-foreground">organização</strong> e{" "}
-            <strong className="font-semibold text-foreground">tranquilidade</strong>, com mais{" "}
-            <strong className="font-semibold text-foreground">economia</strong> nas decisões de
-            compra.
+          <p className="mt-4 font-display text-xl font-semibold leading-snug text-foreground sm:text-2xl">
+            Sua obra sob controle, mesmo quando você não pode estar nela.
+          </p>
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+            Cotamos, organizamos compras e acompanhamos sua obra com mais{" "}
+            <strong className="font-semibold text-foreground">
+              controle, economia e tranquilidade.
+            </strong>
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button
