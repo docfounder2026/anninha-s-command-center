@@ -77,14 +77,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "ANNINHA CONSTRUÇÕES | Gestão de Compras e Acompanhamento de Obras" },
+      {
+        name: "description",
+        content:
+          "Mais controle, melhores compras e menos preocupação na sua obra. Conheça os planos de gestão de compras e acompanhamento operacional da ANNINHA CONSTRUÇÕES.",
+      },
+      { name: "author", content: "ANNINHA CONSTRUÇÕES" },
+      {
+        property: "og:title",
+        content: "ANNINHA CONSTRUÇÕES | Gestão de Compras e Acompanhamento de Obras",
+      },
+      {
+        property: "og:description",
+        content:
+          "Mais controle, melhores compras e menos preocupação na sua obra. Conheça os planos de gestão de compras e acompanhamento operacional da ANNINHA CONSTRUÇÕES.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },

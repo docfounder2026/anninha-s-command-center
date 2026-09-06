@@ -1,4 +1,5 @@
 import { whatsappLink } from "@/lib/anninha";
+import anninhaLogo from "@/assets/anninha-construcoes-logo.png";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -7,9 +8,7 @@ export function Footer() {
     <footer className="border-t border-border bg-sand py-14">
       <div className="container-page grid gap-10 sm:grid-cols-[1.4fr_1fr]">
         <div>
-          <p className="font-display text-lg font-semibold tracking-tight text-foreground">
-            ANNINHA CONSTRUÇÕES
-          </p>
+          <img src={anninhaLogo} alt="ANNINHA CONSTRUÇÕES" className="h-9 w-auto" />
           <p className="mt-1 text-sm text-muted-foreground">
             Gestão de Compras e Acompanhamento de Obras
           </p>
