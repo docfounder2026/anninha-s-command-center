@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { Reveal } from "@/components/Reveal";
 
 const ROWS = [
-  { label: "Primeiro orçamento", value: "R$ 9.800" },
+  { label: "Primeiro orçamento", value: "R$ 13.800" },
   { label: "Valor após novas cotações", value: "R$ 8.750" },
 ];
 
@@ -38,7 +38,7 @@ export function SavingsExample() {
                   </span>
                 </th>
                 <td className="px-6 py-5 text-right font-display text-2xl font-semibold text-primary">
-                  R$ 1.050
+                  R$ 5.050
                 </td>
               </tr>
             </tbody>

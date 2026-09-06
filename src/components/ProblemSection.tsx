@@ -19,7 +19,7 @@ export function ProblemSection() {
       <div className="container-page">
         <SectionHeading
           eyebrow="O desafio"
-          title="Uma obra pode facilmente virar um segundo emprego."
+          title="Uma obra pode facilmente deixar o dono esgotado."
           description="Pesquisar fornecedores, comparar preços, negociar, acompanhar pedidos, resolver atrasos e ainda acompanhar o andamento da obra exige tempo e atenção."
         />
 
