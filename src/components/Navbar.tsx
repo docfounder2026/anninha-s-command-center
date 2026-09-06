@@ -26,11 +26,8 @@ export function Navbar() {
       )}
     >
       <div className="container-page flex h-20 items-center justify-between gap-4">
-        <a href="#inicio" className="flex flex-col leading-tight" aria-label="ANNINHA CONSTRUÇÕES">
-          <img src={anninhaLogo} alt="ANNINHA CONSTRUÇÕES" className="h-9 w-auto sm:h-10" />
-          <span className="mt-1 text-[0.65rem] uppercase tracking-[0.18em] text-muted-foreground sm:text-xs">
-            Gestão de Compras e Acompanhamento de Obras
-          </span>
+        <a href="#inicio" className="flex shrink-0 items-center" aria-label="ANNINHA CONSTRUÇÕES">
+          <img src={anninhaLogo} alt="ANNINHA CONSTRUÇÕES" className="h-8 w-auto sm:h-10" />
         </a>
 
         <nav aria-label="Navegação principal" className="hidden items-center gap-7 lg:flex">
