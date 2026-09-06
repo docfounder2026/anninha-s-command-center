@@ -55,8 +55,7 @@ export const PLANS = [
       "relatório periódico",
     ],
     cta: "Quero ajuda com as compras",
-    highlight: true,
-    badge: "Mais escolhido",
+    highlight: false,
   },
   {
     name: "ANNINHA GESTÃO",
@@ -74,7 +73,8 @@ export const PLANS = [
       "organização das próximas etapas",
     ],
     cta: "Quero o plano Gestão",
-    highlight: false,
+    highlight: true,
+    badge: "Mais escolhido",
   },
 ];
 
