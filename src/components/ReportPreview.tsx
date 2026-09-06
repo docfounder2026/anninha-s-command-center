@@ -31,8 +31,8 @@ export function ReportPreview() {
         />
 
         <div className="mt-14 grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <Reveal>
-            <div className="rounded-3xl border border-border bg-card p-6 shadow-lift sm:p-8">
+          <Reveal className="group">
+            <div className="card-lift rounded-3xl border border-border bg-card p-6 shadow-lift sm:p-8">
               <div className="flex items-center justify-between gap-4 border-b border-border pb-4">
                 <div>
                   <p className="font-display text-base font-semibold text-foreground">
@@ -54,7 +54,10 @@ export function ReportPreview() {
                   { k: "Pendências", v: "2" },
                   { k: "Pontos de atenção", v: "1" },
                 ].map((stat) => (
-                  <div key={stat.k} className="rounded-xl bg-secondary p-4">
+                  <div
+                    key={stat.k}
+                    className="rounded-xl bg-secondary p-4 transition-colors duration-300 hover:bg-accent/60"
+                  >
                     <dt className="text-xs text-muted-foreground">{stat.k}</dt>
                     <dd className="mt-1 font-display text-xl font-semibold text-foreground">
                       {stat.v}
@@ -66,27 +69,24 @@ export function ReportPreview() {
               <div className="mt-6">
                 <p className="text-xs font-medium text-muted-foreground">Andamento geral</p>
                 <div className="mt-2 h-2.5 w-full overflow-hidden rounded-full bg-secondary">
-                  <div className="h-full w-[62%] rounded-full bg-primary" />
+                  <div className="h-full w-0 rounded-full bg-primary transition-[width] duration-1000 ease-out group-data-[visible=true]:w-[62%]" />
                 </div>
               </div>
             </div>
           </Reveal>
 
-          <Reveal delay={120}>
-            <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
-              {ITEMS.map((item) => (
-                <li
-                  key={item.label}
-                  className="flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3 shadow-soft"
-                >
-                  <span className="inline-flex size-9 items-center justify-center rounded-lg bg-secondary text-primary">
+          <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
+            {ITEMS.map((item, i) => (
+              <Reveal as="li" key={item.label} delay={120 + i * 60}>
+                <div className="card-lift group flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3 shadow-soft">
+                  <span className="icon-pop inline-flex size-9 items-center justify-center rounded-lg bg-secondary text-primary">
                     <item.icon className="size-4" aria-hidden="true" />
                   </span>
                   <span className="text-sm font-medium text-foreground">{item.label}</span>
-                </li>
-              ))}
-            </ul>
-          </Reveal>
+                </div>
+              </Reveal>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

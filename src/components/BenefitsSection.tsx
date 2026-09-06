@@ -36,8 +36,8 @@ export function BenefitsSection() {
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {BENEFITS.map((benefit, i) => (
             <Reveal key={benefit.title} delay={i * 80}>
-              <article className="card-lift h-full rounded-2xl border border-border bg-card p-6 shadow-soft">
-                <span className="inline-flex size-12 items-center justify-center rounded-xl bg-secondary text-primary">
+              <article className="card-lift group h-full rounded-2xl border border-border bg-card p-6 shadow-soft">
+                <span className="icon-pop inline-flex size-12 items-center justify-center rounded-xl bg-secondary text-primary">
                   <benefit.icon className="size-5" aria-hidden="true" />
                 </span>
                 <h3 className="mt-5 text-xl font-semibold text-foreground">{benefit.title}</h3>

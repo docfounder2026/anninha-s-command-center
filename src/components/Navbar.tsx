@@ -35,7 +35,7 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+              className="nav-underline text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             >
               {link.label}
             </a>
@@ -54,39 +54,55 @@ export function Navbar() {
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
           aria-label={open ? "Fechar menu" : "Abrir menu"}
-          className="inline-flex size-11 items-center justify-center rounded-lg border border-border text-foreground lg:hidden"
+          className="inline-flex size-11 items-center justify-center rounded-lg border border-border text-foreground transition-transform active:scale-90 lg:hidden"
         >
-          {open ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
+          <span
+            className={cn(
+              "grid transition-transform duration-200",
+              open ? "rotate-90" : "rotate-0",
+            )}
+          >
+            {open ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
+          </span>
         </button>
       </div>
 
-      {open && (
-        <div className="border-t border-border bg-background lg:hidden">
-          <nav aria-label="Navegação mobile" className="container-page flex flex-col py-4">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="rounded-lg px-2 py-3 text-base font-medium text-foreground transition-colors hover:bg-secondary"
-              >
-                {link.label}
-              </a>
-            ))}
-            <Button
-              size="lg"
-              className="mt-3 w-full"
-              onClick={() => {
-                setOpen(false);
-                openWhatsApp();
-              }}
+      <div
+        inert={!open}
+        aria-hidden={!open}
+        className={cn(
+          "grid overflow-hidden border-t border-border bg-background transition-[grid-template-rows,opacity] duration-300 ease-out lg:hidden",
+          open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] border-t-transparent opacity-0",
+        )}
+      >
+        <nav aria-label="Navegação mobile" className="container-page flex flex-col overflow-hidden py-4">
+          {NAV_LINKS.map((link, i) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setOpen(false)}
+              style={{ transitionDelay: open ? `${i * 40}ms` : "0ms" }}
+              className={cn(
+                "rounded-lg px-2 py-3 text-base font-medium text-foreground transition-all duration-300 hover:bg-secondary hover:pl-4",
+                open ? "translate-x-0 opacity-100" : "-translate-x-2 opacity-0",
+              )}
             >
-              <MessageCircle aria-hidden="true" />
-              Falar com a Anninha
-            </Button>
-          </nav>
-        </div>
-      )}
+              {link.label}
+            </a>
+          ))}
+          <Button
+            size="lg"
+            className="mt-3 w-full"
+            onClick={() => {
+              setOpen(false);
+              openWhatsApp();
+            }}
+          >
+            <MessageCircle aria-hidden="true" />
+            Falar com a Anninha
+          </Button>
+        </nav>
+      </div>
     </header>
   );
 }

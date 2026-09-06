@@ -7,8 +7,8 @@ export function PartnersSection() {
   return (
     <section id="parcerias" className="py-20 sm:py-24">
       <div className="container-page">
-        <Reveal className="mx-auto max-w-4xl rounded-3xl border border-border bg-card p-8 shadow-soft sm:p-12">
-          <span className="inline-flex size-12 items-center justify-center rounded-xl bg-accent text-accent-foreground">
+        <Reveal className="card-lift group mx-auto max-w-4xl rounded-3xl border border-border bg-card p-8 shadow-soft sm:p-12">
+          <span className="icon-pop inline-flex size-12 items-center justify-center rounded-xl bg-accent text-accent-foreground">
             <Handshake className="size-5" aria-hidden="true" />
           </span>
           <h2 className="mt-6 text-2xl font-semibold text-foreground sm:text-3xl">

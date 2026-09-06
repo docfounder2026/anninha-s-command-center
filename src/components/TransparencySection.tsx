@@ -28,8 +28,8 @@ export function TransparencySection() {
         <ul className="mt-12 grid gap-5 sm:grid-cols-3">
           {ITEMS.map((item, i) => (
             <Reveal as="li" key={item.label} delay={i * 80}>
-              <div className="flex h-full flex-col items-center gap-4 rounded-2xl border border-primary-foreground/15 p-6 text-center">
-                <span className="inline-flex size-12 items-center justify-center rounded-xl bg-gold/20 text-gold">
+              <div className="group flex h-full flex-col items-center gap-4 rounded-2xl border border-primary-foreground/15 p-6 text-center transition-colors duration-300 hover:border-gold/40 hover:bg-primary-foreground/5">
+                <span className="icon-pop inline-flex size-12 items-center justify-center rounded-xl bg-gold/20 text-gold">
                   <item.icon className="size-5" aria-hidden="true" />
                 </span>
                 <p className="font-medium text-primary-foreground">{item.label}</p>

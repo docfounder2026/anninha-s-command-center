@@ -28,11 +28,13 @@ export function ProjectsSection() {
           {PROJECTS.map((project, i) => (
             <Reveal key={project.title} delay={i * 90} className="h-full">
               <article className="card-lift h-full overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
-                <img
-                  src={project.photo}
-                  alt={project.title}
-                  className="aspect-[3/4] w-full object-cover"
-                />
+                <div className="overflow-hidden">
+                  <img
+                    src={project.photo}
+                    alt={project.title}
+                    className="aspect-[3/4] w-full object-cover transition-transform duration-500 ease-out hover:scale-105"
+                  />
+                </div>
                 <div className="p-6">
                   <h3 className="font-display text-lg font-semibold text-foreground">
                     {project.title}

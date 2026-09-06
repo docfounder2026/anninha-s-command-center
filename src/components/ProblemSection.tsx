@@ -26,8 +26,8 @@ export function ProblemSection() {
         <ul className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {PROBLEMS.map((problem, i) => (
             <Reveal as="li" key={problem.label} delay={i * 70}>
-              <div className="card-lift h-full rounded-2xl border border-border bg-card p-6 shadow-soft">
-                <span className="inline-flex size-11 items-center justify-center rounded-xl bg-secondary text-primary">
+              <div className="card-lift group h-full rounded-2xl border border-border bg-card p-6 shadow-soft">
+                <span className="icon-pop inline-flex size-11 items-center justify-center rounded-xl bg-secondary text-primary">
                   <problem.icon className="size-5" aria-hidden="true" />
                 </span>
                 <p className="mt-4 font-display text-lg font-semibold text-foreground">
