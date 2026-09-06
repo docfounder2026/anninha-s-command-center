@@ -16,8 +16,8 @@ export const NAV_LINKS = [
   { label: "Como Funciona", href: "#como-funciona" },
   { label: "Serviços", href: "#servicos" },
   { label: "Planos", href: "#planos" },
+  { label: "Projetos", href: "#projetos" },
   { label: "Benefícios", href: "#beneficios" },
-  { label: "FAQ", href: "#faq" },
 ];
 
 export const PLANS = [
