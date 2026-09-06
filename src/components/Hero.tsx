@@ -2,8 +2,7 @@ import { ArrowRight, ClipboardList } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/Reveal";
 import { openWhatsApp } from "@/lib/anninha";
-import heroVideo from "@/assets/hero-drone-construction.mp4.asset.json";
-import heroPoster from "@/assets/hero-anninha.jpg";
+import heroImage from "@/assets/Heros-acompanha-obra.png";
 
 export function Hero() {
   return (
@@ -49,15 +48,9 @@ export function Hero() {
 
         <Reveal delay={120} className="relative">
           <div className="relative overflow-hidden rounded-3xl bg-card shadow-lift">
-            <video
-              src={heroVideo.url}
-              poster={heroPoster}
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              aria-label="Filmagem aérea com drone de uma obra sendo acompanhada pela equipe da ANNINHA CONSTRUÇÕES"
+            <img
+              src={heroImage}
+              alt="Acompanhamento de obra pela equipe da ANNINHA CONSTRUÇÕES"
               className="aspect-[4/5] h-full w-full object-cover"
             />
           </div>
