@@ -1,4 +1,4 @@
-export const WHATSAPP_NUMBER = "55XXXXXXXXXXX";
+export const WHATSAPP_NUMBER = "5514981724854";
 
 export const DEFAULT_WHATSAPP_MESSAGE =
   "Olá, Anninha! Conheci a ANNINHA CONSTRUÇÕES pelo site e gostaria de falar sobre minha obra.";
