@@ -5,6 +5,7 @@ import { ProblemSection } from "@/components/ProblemSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { HowItWorks } from "@/components/HowItWorks";
 import { PricingSection } from "@/components/PricingSection";
+import { ProjectsSection } from "@/components/ProjectsSection";
 import { BenefitsSection } from "@/components/BenefitsSection";
 import { TransparencySection } from "@/components/TransparencySection";
 import { SavingsExample } from "@/components/SavingsExample";
@@ -47,6 +48,7 @@ function Index() {
         <ServicesSection />
         <HowItWorks />
         <PricingSection />
+        <ProjectsSection />
         <BenefitsSection />
         <TransparencySection />
         <SavingsExample />
